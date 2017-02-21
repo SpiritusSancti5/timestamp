@@ -9,7 +9,7 @@ var port = process.env.PORT || 8080;
 // find index.html and render it
 app.get('/', function(req, res){
     res.sendFile(path.join(__dirname+'/index.html'));
-    res.sendFile(path.join(__dirname+'/stle.css'));
+    res.sendFile(path.join(__dirname+'/style.css'));
 });
 
 app.listen(port, function(){
