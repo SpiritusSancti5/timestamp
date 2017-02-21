@@ -11,11 +11,11 @@ var port = process.env.PORT || 8080;
 app.use("/", express.static(__dirname + '/'));
 
 // find index.html and render it
-app.get('/', function(req, res){
-    res.sendFile(path.join(__dirname+'/index.html'));
+// app.get('/', function(req, res){
+ //   res.sendFile(path.join(__dirname+'/index.html'));
     // using res.sendFile(path.join(__dirname+'/style.css')); here breaks the app and the page won't display properly
     // yes, i really wanted to try and see how that works out
-});
+//});
 
 app.listen(port, function(){
     console.log('supposed to be ready on port 8080');
