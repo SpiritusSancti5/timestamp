@@ -8,7 +8,7 @@ var port = process.env.PORT || 8080;
 
 
 // supposed to help with css file issue
-app.use("/public", express.static(__dirname + '/public'));
+app.use("/", express.static(__dirname + '/'));
 
 // find index.html and render it
 app.get('/', function(req, res){
