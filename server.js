@@ -7,6 +7,10 @@ var moment = require('moment');
 var port = process.env.PORT || 8080; 
 
 
+// supposed to help with css file issue
+app.use("/public", express.static(__dirname + '/public'));
+
+// find index.html and render it
 app.get('/', function(req, res){
     res.sendFile(path.join(__dirname+'/index.html'));
 });
